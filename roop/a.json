@@ -7,7 +7,7 @@
   "sourceURL": "https://raw.githubusercontent.com/janaagency/rp/main/roop/a.json",
   "apps": [
     {
-      "name": "LocSim",
+      "name": "LocationSimulator",
       "bundleIdentifier": "com.janaagency.LocationSimulation",
       "developerName": "janaagency",
       "iconURL": "https://github.com/janaagency/rp/releases/download/debug/locsim.png",
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "name": "palera1n without computer (iOS 15, iPhone 7-X)",
+      "name": "palera1n no pc (iOS 15, iPhone 7-X)",
       "bundleIdentifier": "com.janaagency.palera1n15",
       "developerName": "janaagency",
       "iconURL": "https://github.com/janaagency/rp/releases/download/debug/palera1n.png",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "name": "palera1n without computer (iOS 16, iPhone 7-X)",
+      "name": "palera1n no pc (iOS 16, iPhone 7-X)",
       "bundleIdentifier": "com.janaagency.palera1n16",
       "developerName": "janaagency",
       "iconURL": "https://github.com/janaagency/rp/releases/download/debug/palera1n.png",
@@ -100,7 +100,7 @@
       "name": "Bootstrap (Roothide) (iOS 14.0-17.0, iPhone 6-15)",
       "bundleIdentifier": "com.janaagency.bootstrap",
       "developerName": "janaagency",
-      "iconURL": "https://github.com/m1337v/Bootstrap/blob/main/Bootstrap/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png",
+      "iconURL": "https://raw.githubusercontent.com/roothide/Bootstrap/main/Bootstrap/Assets.xcassets/Bootstrap.imageset/Bootstrap.png",
       "versions": [
         {
         "version": "1.1",
