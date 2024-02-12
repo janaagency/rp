@@ -97,21 +97,6 @@
       ]
     },
     {
-      "name": "Bootstrap (Roothide) (iOS 14.0-17.0, iPhone 6-15)",
-      "bundleIdentifier": "com.janaagency.bootstrap",
-      "developerName": "janaagency",
-      "iconURL": "https://raw.githubusercontent.com/roothide/Bootstrap/main/Bootstrap/Assets.xcassets/Bootstrap.imageset/Bootstrap.png",
-      "versions": [
-        {
-        "version": "1.1",
-        "date": "2024-01-23",
-        "size": 54500455,
-        "downloadURL": "https://github.com/m1337v/Bootstrap/releases/download/release/Bootstrap.tipa",
-        "localizedDescription": "Bootstrap (Roothide) is a completely hidden rootless iOS 14.0-17.0 jailbreak for iPhone 6-15\nLast updated: 01-23-2024\nStatus: \u2705"
-        }
-      ]
-    },
-    {
       "name": "Shadowrocket",
       "bundleIdentifier": "com.janaagency.shadowrocket",
       "developerName": "janaagency",
