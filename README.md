@@ -1,6 +1,6 @@
 # janaagency fork for Google Colab
 
-![](https://github.com/m1337v/rp/releases/download/debug/RepoHeader.png)
+![](https://github.com/janaagency/rp/releases/download/debug/RepoHeader.png)
 
 ## Installation
 
