@@ -21,19 +21,26 @@ FRAME_PROCESSORS_INTERFACE = [
     'post_process'
 ]
 
-
 def load_frame_processor_module(frame_processor: str) -> Any:
     try:
-        frame_processor_module = importlib.import_module(f'roop.processors.frame.{frame_processor}')
+        module_path = f'roop.processors.frame.{frame_processor}'
+        print(f"Attempting to load frame processor module: {module_path}")
+        
+        frame_processor_module = importlib.import_module(module_path)
         for method_name in FRAME_PROCESSORS_INTERFACE:
             if not hasattr(frame_processor_module, method_name):
-                raise NotImplementedError
-    except ModuleNotFoundError:
+                print(f"Method {method_name} is not implemented in {frame_processor}")
+                raise NotImplementedError(f"Method {method_name} not implemented in {frame_processor}")
+        print(f"Successfully loaded frame processor module: {frame_processor}")
+    except ModuleNotFoundError as e:
+        print(f"Error: Frame processor module {frame_processor} not found.")
+        traceback.print_exc()
         sys.exit(f'Frame processor {frame_processor} not found.')
-    except NotImplementedError:
-        sys.exit(f'Frame processor {frame_processor} not implemented correctly.')
+    except NotImplementedError as e:
+        print(f"Error: {e}")
+        traceback.print_exc()
+        sys.exit(str(e))
     return frame_processor_module
-
 
 def get_frame_processors_modules(frame_processors: List[str]) -> List[ModuleType]:
     global FRAME_PROCESSORS_MODULES
